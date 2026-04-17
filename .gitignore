@@ -1,0 +1,18 @@
+# 本地环境与密钥（切勿提交）
+.env
+
+# 运行时日志
+logs/
+*.log
+
+# 操作系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+*.sublime-*
+
+# 可选：若存在用户上传目录可取消下一行注释
+# uploads/

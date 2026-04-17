@@ -1,0 +1,9 @@
+XFP Activation Key System / XFP 密钥获取系统
+Copyright (C) 2026 YcFeller
+Author: https://github.com/YcFeller
+
+本程序为自由软件：在遵守 GNU Affero 通用公共许可证第三版（AGPL-3.0）条款的前提下，
+你可以再发布和/或修改它。著作权由 YcFeller 保留；详见仓库根目录 LICENSE 文件。
+
+Third-party component bundled in this repository:
+- PHPMailer (LGPL-2.1) — see app/PHPMailer/LICENSE

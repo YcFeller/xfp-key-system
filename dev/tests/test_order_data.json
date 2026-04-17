@@ -1,0 +1,124 @@
+{
+  "orders": [
+    {
+      "out_trade_no": "AFD202501081234567890",
+      "user_id": "user_12345",
+      "total_amount": "29.90",
+      "remark": "购买华为GT4表盘套装",
+      "discount": "0.00",
+      "product_name": "华为GT4精美表盘合集",
+      "plan_id": "plan_watchface_001",
+      "sku_detail": [
+        {
+          "name": "表盘类型",
+          "value": "运动风格表盘"
+        },
+        {
+          "name": "适配设备",
+          "value": "华为GT4系列"
+        }
+      ]
+    },
+    {
+      "out_trade_no": "AFD202501081234567891",
+      "user_id": "user_67890",
+      "total_amount": "19.90",
+      "remark": "购买快应用开发工具",
+      "discount": "5.00",
+      "product_name": "快应用开发助手Pro",
+      "plan_id": "plan_quickapp_001",
+      "sku_detail": [
+        {
+          "name": "应用类型",
+          "value": "开发工具快应用"
+        },
+        {
+          "name": "功能特性",
+          "value": "代码编辑、实时预览、一键发布"
+        }
+      ]
+    },
+    {
+      "out_trade_no": "AFD202501081234567892",
+      "user_id": "user_11111",
+      "total_amount": "49.90",
+      "remark": "购买表盘+快应用套餐",
+      "discount": "10.00",
+      "product_name": "华为GT4表盘与快应用超值套餐",
+      "plan_id": "plan_mixed_001",
+      "sku_detail": [
+        {
+          "name": "套餐内容",
+          "value": "5个精美表盘 + 3个实用快应用"
+        },
+        {
+          "name": "表盘风格",
+          "value": "商务、运动、时尚混搭"
+        },
+        {
+          "name": "快应用类型",
+          "value": "天气、计算器、备忘录app"
+        }
+      ]
+    },
+    {
+      "out_trade_no": "AFD202501081234567893",
+      "user_id": "user_22222",
+      "total_amount": "15.90",
+      "remark": "购买游戏应用",
+      "discount": "0.00",
+      "product_name": "智能手表小游戏合集",
+      "plan_id": "plan_quickapp_002",
+      "sku_detail": [
+        {
+          "name": "游戏数量",
+          "value": "8款精品小游戏"
+        },
+        {
+          "name": "游戏类型",
+          "value": "益智、休闲、运动类app游戏"
+        }
+      ]
+    },
+    {
+      "out_trade_no": "AFD202501081234567894",
+      "user_id": "user_33333",
+      "total_amount": "35.90",
+      "remark": "购买商务表盘",
+      "discount": "0.00",
+      "product_name": "商务精英Watch Face专业版",
+      "plan_id": "plan_watchface_002",
+      "sku_detail": [
+        {
+          "name": "表盘数量",
+          "value": "12款商务表盘"
+        },
+        {
+          "name": "设计风格",
+          "value": "简约商务、奢华金属、经典皮质"
+        }
+      ]
+    }
+  ],
+  "expected_product_types": {
+    "AFD202501081234567890": "watchface",
+    "AFD202501081234567891": "quickapp",
+    "AFD202501081234567892": "mixed",
+    "AFD202501081234567893": "quickapp",
+    "AFD202501081234567894": "watchface"
+  },
+  "description": {
+    "purpose": "测试订单产品类型自动识别功能",
+    "test_scenarios": [
+      "纯表盘产品 - 应识别为 watchface",
+      "纯快应用产品 - 应识别为 quickapp",
+      "混合套餐产品 - 应识别为 mixed",
+      "游戏类应用 - 应识别为 quickapp",
+      "商务表盘 - 应识别为 watchface"
+    ],
+    "keywords_test": {
+      "watchface_keywords": ["表盘", "watchface", "watch face", "表面"],
+      "quickapp_keywords": ["快应用", "quickapp", "quick app", "应用", "app"]
+    }
+  }
+}
